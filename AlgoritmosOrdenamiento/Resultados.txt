@@ -1,0 +1,24 @@
+Booble Sort
+n -> 100
+	Time: 0.011
+n -> 1 000
+	Time: 0.135
+n -> 2 000 
+	Time: 0.327
+
+Insert Sort
+n -> 100
+	Time: 0.014
+n -> 1 000
+	Time:  0.150
+n -> 2 000 
+	Time: 0.382
+
+Select Sort
+n -> 100
+	Time: 0.012
+n -> 1 000
+	Time:  0.158
+n -> 2 000 
+	Time: 0.319 
+
