@@ -188,6 +188,89 @@ void selectionr()
     }
 }
 
+//cocktail sort
+void cocktail()
+{
+    int a[] = { 5,1,4,8,2,1,6,5,7 };
+    int n = sizeof(a) / sizeof(a[0]);
+
+    bool swapped = true;
+    int start = 0;
+    int end = n - 1;
+
+    while (swapped) {
+        swapped = false;
+
+        for (int i = start; i < end; ++i) {
+            if (a[i] > a[i + 1]) {
+                swap(a[i], a[i + 1]);
+                swapped = true;
+            }
+        }
+
+        if (!swapped)
+            break;
+
+        swapped = false;
+        --end;
+        for (int i = end - 1; i >= start; --i) {
+            if (a[i] > a[i + 1]) {
+                swap(a[i], a[i + 1]);
+                swapped = true;
+            }
+        }
+        ++start;
+    }
+
+    for (int i = 0; i < n; i++)
+        printf("%d ", a[i]);
+    printf("\n");
+}
+
+void cocktailr()
+{
+    srand(time(NULL));
+
+    int a[2000];
+    int n = 2000;
+
+    for (int i = 0; i < n; i++)
+    {
+        a[i] = rand() % (100 - 1 + 1) + 1;
+    }
+
+    bool swapped = true;
+    int start = 0;
+    int end = n - 1;
+
+    while (swapped) {
+        swapped = false;
+
+        for (int i = start; i < end; ++i) {
+            if (a[i] > a[i + 1]) {
+                swap(a[i], a[i + 1]);
+                swapped = true;
+            }
+        }
+
+        if (!swapped)
+            break;
+
+        swapped = false;
+        --end;
+        for (int i = end - 1; i >= start; --i) {
+            if (a[i] > a[i + 1]) {
+                swap(a[i], a[i + 1]);
+                swapped = true;
+            }
+        }
+        ++start;
+    }
+
+    for (int i = 0; i < n; i++)
+        printf("%d ", a[i]);
+    printf("\n");
+}
 
 int main()
 {
@@ -197,7 +280,8 @@ int main()
 
     //boobler();
     //insertr();
-    selectionr();
+    //selectionr();
+    cocktailr();
 
     t1 = clock();
 

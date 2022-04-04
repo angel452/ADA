@@ -1,5 +1,6 @@
 ﻿  Source.cpp
-E:\Angel Josue Loayza Huarachi_UCSP\Semestre 5 - 2022 - CCOMP5\ADA ♥♥♥\AlgoritmosOrdenamiento\AlgoritmosOrdenamiento\Source.cpp(31,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-E:\Angel Josue Loayza Huarachi_UCSP\Semestre 5 - 2022 - CCOMP5\ADA ♥♥♥\AlgoritmosOrdenamiento\AlgoritmosOrdenamiento\Source.cpp(86,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-E:\Angel Josue Loayza Huarachi_UCSP\Semestre 5 - 2022 - CCOMP5\ADA ♥♥♥\AlgoritmosOrdenamiento\AlgoritmosOrdenamiento\Source.cpp(154,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-  AlgoritmosOrdenamiento.vcxproj -> E:\Angel Josue Loayza Huarachi_UCSP\Semestre 5 - 2022 - CCOMP5\ADA ♥♥♥\AlgoritmosOrdenamiento\x64\Debug\AlgoritmosOrdenamiento.exe
+E:\Angel Josue Loayza Huarachi_UCSP\Semestre 5 - 2022 - CCOMP5\ADA ♥♥♥\Algoritmos\AlgoritmosOrdenamiento\AlgoritmosOrdenamiento\Source.cpp(31,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+E:\Angel Josue Loayza Huarachi_UCSP\Semestre 5 - 2022 - CCOMP5\ADA ♥♥♥\Algoritmos\AlgoritmosOrdenamiento\AlgoritmosOrdenamiento\Source.cpp(86,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+E:\Angel Josue Loayza Huarachi_UCSP\Semestre 5 - 2022 - CCOMP5\ADA ♥♥♥\Algoritmos\AlgoritmosOrdenamiento\AlgoritmosOrdenamiento\Source.cpp(153,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+E:\Angel Josue Loayza Huarachi_UCSP\Semestre 5 - 2022 - CCOMP5\ADA ♥♥♥\Algoritmos\AlgoritmosOrdenamiento\AlgoritmosOrdenamiento\Source.cpp(232,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  AlgoritmosOrdenamiento.vcxproj -> E:\Angel Josue Loayza Huarachi_UCSP\Semestre 5 - 2022 - CCOMP5\ADA ♥♥♥\Algoritmos\AlgoritmosOrdenamiento\x64\Debug\AlgoritmosOrdenamiento.exe
