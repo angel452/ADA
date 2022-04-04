@@ -31,8 +31,8 @@ void boobler()
     srand(time(NULL));
     int temp;
     
-    int a[10000];
-    int n = 10000;
+    int a[2000];
+    int n = 2000;
 
     for (int i = 0; i < n; i++)
     {
@@ -85,8 +85,8 @@ void insertr()
 {
     srand(time(NULL));
 
-    int a[10000];
-    int n = 10000;
+    int a[2000];
+    int n = 2000;
 
     for (int i = 0; i < n; i++)
     {
@@ -147,13 +147,12 @@ void selection()
     }
 }
 
-
 //select random
 void selectionr()
 {
     srand(time(NULL));
-    int a[10];
-    int n = 10;
+    int a[2000];
+    int n = 2000;
     
     for (int i = 0; i < n; i++)
     {
@@ -197,8 +196,8 @@ int main()
     t0 = clock();
 
     //boobler();
-    insertr();
-    //selectionr();
+    //insertr();
+    selectionr();
 
     t1 = clock();
 
