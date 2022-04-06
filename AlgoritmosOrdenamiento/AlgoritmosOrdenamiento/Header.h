@@ -1,13 +1,6 @@
 #include <iostream>
 using namespace std;
 
-void printArray(int A[], int size)
-{
-    cout << "----------------------------------------------" << endl;
-    for (auto i = 0; i < size; i++)
-        cout << A[i] << " ";
-}
-
 //bouble
 
 void booble()
