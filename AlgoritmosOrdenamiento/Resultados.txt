@@ -1,31 +1,55 @@
 Booble Sort
 n -> 100
-	Time: 0.011
+	Time: 0.019
 n -> 1 000
-	Time: 0.135
+	Time: 0.231
 n -> 2 000 
-	Time: 0.327
+	Time: 0.418
 
 Insert Sort
 n -> 100
-	Time: 0.014
+	Time: 0.023
 n -> 1 000
-	Time:  0.150
+	Time:  0.275
 n -> 2 000 
-	Time: 0.382
+	Time: 0.454
 
 Select Sort
 n -> 100
-	Time: 0.012
+	Time: 0.020
 n -> 1 000
-	Time:  0.158
+	Time:  0.30
 n -> 2 000 
-	Time: 0.319 
+	Time: 0.50
 
 Cocktail Sort:
 n -> 100
-	Time: 0.009
+	Time: 0.020
 n -> 1 000
-	Time:  0.0703
+	Time:  0.244
 n -> 2 000 
-	Time: 0.22
+	Time: 0.6
+
+Merge Sort:
+n -> 100
+	Time: 0.014  
+n -> 1 000
+	Time: 0.222
+n -> 2 000 
+	Time: 0.404
+
+Quick Sort:
+n -> 100
+	Time: 0.019
+n -> 1 000
+	Time: 0.205
+n -> 2 000 
+	Time: 0.427 
+
+Heap Sort:
+n -> 100
+	Time: 0.022
+n -> 1 000
+	Time: 0.257
+n -> 2 000 
+	Time: 0.491
