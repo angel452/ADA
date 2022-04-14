@@ -1,5 +1,9 @@
 #include <iostream>
 #include <fstream>
+
+#include <time.h>
+#include <stdlib.h>
+
 #include "Strassen.hpp"
 #include "Clasicc.hpp"
 
@@ -74,7 +78,7 @@ int main()
 
     // -------------------- CLASICO --------------------------------------------
     
-    /*
+    
     cout << "\t Multiplicacion Clasica " << endl;
 
     //Rellenar matriz C
@@ -89,12 +93,26 @@ int main()
     unsigned t0, t1;
     t0 = clock();
 
-    MultiplicacionMatrizClasico(A,B,C,n);
-    */
+    C = MultiplicacionMatrizClasico(A,B,C,n);
+
+    // --- Test ---
+    srand(time(NULL));
+    ofstream archivo("matrizresultante.txt");
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            archivo << C[i][j] << " ";
+        }
+        archivo << endl;
+    }
+    cout << "Se creo el archivo correctamente" << endl;
+    archivo.close();
+    // ------------
 
     // -------------------- STRASSEN ----------------------------------------------
     
-    
+    /*
     cout << "\t ----- Multiplicacion Strassen ----- " << endl;
 
     unsigned t0, t1;
@@ -104,7 +122,22 @@ int main()
 
     cout << "Multipliction result:" << endl;
     printMatrix(C, n);
-    
+
+    // --- Test ---
+    srand(time(NULL));
+    ofstream archivo("matrizresultante.txt");
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            archivo << C[i][j] << " ";
+        }
+        archivo << endl;
+    }
+    cout << "Se creo el archivo correctamente" << endl;
+    archivo.close();
+    // ------------
+    */
 
     // -----------------------------------------------------------------------------
 

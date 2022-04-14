@@ -3,7 +3,8 @@
 #pragma once
 using namespace std;
 
-void MultiplicacionMatrizClasico(int** A, int** B, int** C, int n)
+//void MultiplicacionMatrizClasico(int** A, int** B, int** C, int n)
+int **MultiplicacionMatrizClasico(int** A, int** B, int** C, int n)
 {
     //Multiplicacion
     for (int row = 0; row < n; row++)
@@ -19,6 +20,8 @@ void MultiplicacionMatrizClasico(int** A, int** B, int** C, int n)
 
     cout << "Resultado:" << endl;
     printMatrix(C, n);
+
+    return C;
 
 }
 
