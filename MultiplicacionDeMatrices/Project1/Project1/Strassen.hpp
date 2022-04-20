@@ -2,6 +2,8 @@
 #include "GeneralFunctions.hpp"
 #pragma once
 
+using namespace std;
+
 int** strassenMultiply(int** A, int** B, int n) 
 {
     if (n == 1) {
@@ -22,6 +24,7 @@ int** strassenMultiply(int** A, int** B, int n)
     int** B21 = initializeMatrix(k);
     int** B22 = initializeMatrix(k);
 
+    //Repartimos en 4 partes la matriz A y la matriz B
     for (int i = 0; i < k; i++)
         for (int j = 0; j < k; j++) {
             A11[i][j] = A[i][j];
@@ -34,19 +37,31 @@ int** strassenMultiply(int** A, int** B, int n)
             B22[i][j] = B[k + i][k + j];
         }
 
-    int** P1 = strassenMultiply(A11, subtract(B12, B22, k), k);
-    int** P2 = strassenMultiply(add(A11, A12, k), B22, k);
-    int** P3 = strassenMultiply(add(A21, A22, k), B11, k);
-    int** P4 = strassenMultiply(A22, subtract(B21, B11, k), k);
-    int** P5 = strassenMultiply(add(A11, A22, k), add(B11, B22, k), k);
-    int** P6 = strassenMultiply(subtract(A12, A22, k), add(B21, B22, k), k);
-    int** P7 = strassenMultiply(subtract(A11, A21, k), add(B11, B12, k), k);
+    /*
+    cout << "A11" << endl; printMatrix(A11, k); cout << endl;
+    cout << "A12" << endl; printMatrix(A12, k); cout << endl;
+    cout << "A21" << endl; printMatrix(A21, k); cout << endl;
+    cout << "A22" << endl; printMatrix(A22, k); cout << endl;
+    cout << "B11" << endl; printMatrix(B11, k); cout << endl;
+    cout << "B12" << endl; printMatrix(B12, k); cout << endl;
+    cout << "B21" << endl; printMatrix(B21, k); cout << endl;
+    cout << "B22" << endl; printMatrix(B22, k); cout << endl;
+    */
 
-    int** C11 = subtract(add(add(P5, P4, k), P6, k), P2, k);
+    int** P1 = strassenMultiply(A11, subtract(B12, B22, k), k);                 //S1
+    int** P2 = strassenMultiply(add(A11, A12, k), B22, k);                      //S2
+    int** P3 = strassenMultiply(add(A21, A22, k), B11, k);                      //S3
+    int** P4 = strassenMultiply(A22, subtract(B21, B11, k), k);                 //S4
+    int** P5 = strassenMultiply(add(A11, A22, k), add(B11, B22, k), k);         //S5
+    int** P6 = strassenMultiply(subtract(A12, A22, k), add(B21, B22, k), k);    //S6
+    int** P7 = strassenMultiply(subtract(A11, A21, k), add(B11, B12, k), k);    //S6
+
+    int** C11 = subtract( add( add(P5, P4, k), P6, k ), P2, k );
     int** C12 = add(P1, P2, k);
     int** C21 = add(P3, P4, k);
     int** C22 = subtract(subtract(add(P5, P1, k), P3, k), P7, k);
 
+    //Unimos todas las partes de C
     for (int i = 0; i < k; i++)
         for (int j = 0; j < k; j++) {
             C[i][j] = C11[i][j];

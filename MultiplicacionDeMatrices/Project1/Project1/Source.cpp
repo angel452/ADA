@@ -78,7 +78,7 @@ int main()
 
     // -------------------- CLASICO --------------------------------------------
     
-    
+    /*
     cout << "\t Multiplicacion Clasica " << endl;
 
     //Rellenar matriz C
@@ -109,10 +109,11 @@ int main()
     cout << "Se creo el archivo correctamente" << endl;
     archivo.close();
     // ------------
+    */
 
     // -------------------- STRASSEN ----------------------------------------------
     
-    /*
+    
     cout << "\t ----- Multiplicacion Strassen ----- " << endl;
 
     unsigned t0, t1;
@@ -137,7 +138,7 @@ int main()
     cout << "Se creo el archivo correctamente" << endl;
     archivo.close();
     // ------------
-    */
+    
 
     // -----------------------------------------------------------------------------
 
