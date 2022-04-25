@@ -95,7 +95,7 @@ int main()
 
     C = MultiplicacionMatrizClasico(A,B,C,n);
 
-    // --- Test ---
+    // --- txt ---
     srand(time(NULL));
     ofstream archivo("matrizresultante.txt");
     for (int i = 0; i < n; i++)
@@ -124,7 +124,7 @@ int main()
     cout << "Multipliction result:" << endl;
     printMatrix(C, n);
 
-    // --- Test ---
+    // --- txt ---
     srand(time(NULL));
     ofstream archivo("matrizresultante.txt");
     for (int i = 0; i < n; i++)
