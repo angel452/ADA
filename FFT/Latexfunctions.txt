@@ -1,0 +1,11 @@
+serie de fourier:
+f(x) = \frac{a_{0}}{2}+\sum_{n=1}^{\infty}a_{n}\cos(\frac{n\pi x}{L})+\sum_{n=1}^{\infty}b_{n}\sin(\frac{n\pi x}{L})
+
+a0:
+a_{0}=\frac{1}{L}\int_{-L}^{L}f(x)dx
+
+an:
+a_{n}=\frac{1}{L}\int_{-L}^{L}f(x)\cos(\frac{n\pi x}{L})dx
+
+bn:
+b_{n}=\frac{1}{L}\int_{-L}^{L}f(x)\sin(\frac{n\pi x}{L})dx

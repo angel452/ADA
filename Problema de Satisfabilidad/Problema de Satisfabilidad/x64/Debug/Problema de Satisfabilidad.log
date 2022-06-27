@@ -1,0 +1,4 @@
+﻿  Source.cpp
+E:\Angel Josue Loayza Huarachi_UCSP\Semestre 5 - 2022 - CCOMP5\ADA ♥♥♥\Algoritmos\Problema de Satisfabilidad\Problema de Satisfabilidad\Source.cpp(23,12): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+E:\Angel Josue Loayza Huarachi_UCSP\Semestre 5 - 2022 - CCOMP5\ADA ♥♥♥\Algoritmos\Problema de Satisfabilidad\Problema de Satisfabilidad\Source.cpp(123,12): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+  Problema de Satisfabilidad.vcxproj -> E:\Angel Josue Loayza Huarachi_UCSP\Semestre 5 - 2022 - CCOMP5\ADA ♥♥♥\Algoritmos\Problema de Satisfabilidad\x64\Debug\Problema de Satisfabilidad.exe
